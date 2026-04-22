@@ -103,59 +103,67 @@
 @keyframes float-slow {
   0%,
   100% {
-    transform: translateY(0px) translateX(0px);
+    transform: translateY(0px) translateX(0px) scale(1);
   }
   33% {
-    transform: translateY(-18px) translateX(8px);
+    transform: translateY(-48px) translateX(24px) scale(1.06);
   }
   66% {
-    transform: translateY(10px) translateX(-6px);
+    transform: translateY(28px) translateX(-18px) scale(0.96);
   }
 }
 
 @keyframes float-slower {
   0%,
   100% {
-    transform: translateY(0px) translateX(0px);
+    transform: translateY(0px) translateX(0px) scale(1);
   }
   50% {
-    transform: translateY(-24px) translateX(12px);
+    transform: translateY(-60px) translateX(32px) scale(1.1);
   }
 }
 
 @keyframes float-reverse {
   0%,
   100% {
-    transform: translateY(0px) translateX(0px);
+    transform: translateY(0px) translateX(0px) scale(1);
   }
   40% {
-    transform: translateY(14px) translateX(-10px);
+    transform: translateY(36px) translateX(-26px) scale(1.05);
   }
   80% {
-    transform: translateY(-8px) translateX(6px);
+    transform: translateY(-22px) translateX(16px) scale(0.95);
   }
 }
 
 .bg-dot {
-  animation: float-slow 12s ease-in-out infinite;
+  animation: float-slow 10s ease-in-out infinite;
 }
 .bg-dot:nth-child(2) {
-  animation: float-slower 16s ease-in-out infinite;
+  animation: float-slower 14s ease-in-out infinite;
   animation-delay: -4s;
 }
 .bg-dot:nth-child(3) {
-  animation: float-reverse 14s ease-in-out infinite;
+  animation: float-reverse 12s ease-in-out infinite;
   animation-delay: -7s;
 }
 .bg-dot:nth-child(4) {
-  animation: float-slow 18s ease-in-out infinite;
+  animation: float-slow 15s ease-in-out infinite;
   animation-delay: -2s;
 }
 .bg-dot:nth-child(5) {
-  animation: float-slower 13s ease-in-out infinite;
+  animation: float-slower 11s ease-in-out infinite;
   animation-delay: -9s;
 }
 .bg-dot:nth-child(6) {
-  animation: float-reverse 17s ease-in-out infinite;
+  animation: float-reverse 13s ease-in-out infinite;
   animation-delay: -5s;
+}
+.bg-dot:nth-child(7) {
+  animation: float-slow 16s ease-in-out infinite;
+  animation-delay: -3s;
+}
+.bg-dot:nth-child(8) {
+  animation: float-reverse 12s ease-in-out infinite;
+  animation-delay: -6s;
 }
