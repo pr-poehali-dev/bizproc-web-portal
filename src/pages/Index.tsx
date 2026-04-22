@@ -110,41 +110,58 @@ export default function Index() {
 
         {/* Hero */}
         <section className="mb-36">
-          <p
-            className="opacity-0 animate-fade-in text-xs tracking-[0.25em] uppercase text-neutral-400 mb-8"
-            style={{ animationDelay: "0.4s" }}
-          >
-            Автоматизация · Интеграции · Рост эффективности
-          </p>
-          <h1
-            className="opacity-0 animate-fade-in font-display text-[clamp(3rem,8vw,7rem)] leading-none font-light text-neutral-900 mb-8"
-            style={{ animationDelay: "0.5s" }}
-          >
-            Вы можете вести<br />
-            <em className="not-italic bg-gradient-to-r from-violet-500 via-sky-500 to-emerald-500 bg-clip-text text-transparent">
-              бизнес в разы эффективнее
-            </em>
-          </h1>
-          <div
-            className="opacity-0 animate-fade-in max-w-lg"
-            style={{ animationDelay: "0.7s" }}
-          >
-            <p className="text-neutral-500 text-lg leading-relaxed">
-              Автоматизируем бизнес-процессы: заявки, документы, отчёты, уведомления.
-              Ваши сотрудники делают то, что важно, — остальное работает само.
-            </p>
-          </div>
-          <div
-            className="opacity-0 animate-fade-in flex gap-4 mt-10"
-            style={{ animationDelay: "0.9s" }}
-          >
-            <a
-              href="mailto:hello@example.com"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-600 to-sky-500 text-white text-sm tracking-wide px-8 py-4 hover:opacity-90 transition-opacity duration-200"
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <p
+                className="opacity-0 animate-fade-in text-xs tracking-[0.25em] uppercase text-neutral-400 mb-8"
+                style={{ animationDelay: "0.4s" }}
+              >
+                Автоматизация · Интеграции · Рост эффективности
+              </p>
+              <h1
+                className="opacity-0 animate-fade-in font-display text-[clamp(2.5rem,6vw,5rem)] leading-none font-light text-neutral-900 mb-8"
+                style={{ animationDelay: "0.5s" }}
+              >
+                Вы можете вести<br />
+                <em className="not-italic bg-gradient-to-r from-violet-500 via-sky-500 to-emerald-500 bg-clip-text text-transparent">
+                  бизнес в разы эффективнее
+                </em>
+              </h1>
+              <div
+                className="opacity-0 animate-fade-in max-w-lg"
+                style={{ animationDelay: "0.7s" }}
+              >
+                <p className="text-neutral-500 text-lg leading-relaxed">
+                  Автоматизируем бизнес-процессы: заявки, документы, отчёты, уведомления.
+                  Ваши сотрудники делают то, что важно, — остальное работает само.
+                </p>
+              </div>
+              <div
+                className="opacity-0 animate-fade-in flex gap-4 mt-10"
+                style={{ animationDelay: "0.9s" }}
+              >
+                <a
+                  href="mailto:hello@example.com"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-600 to-sky-500 text-white text-sm tracking-wide px-8 py-4 hover:opacity-90 transition-opacity duration-200"
+                >
+                  Обсудить проект
+                  <Icon name="ArrowRight" size={14} />
+                </a>
+              </div>
+            </div>
+            <div
+              className="opacity-0 animate-fade-in"
+              style={{ animationDelay: "0.6s" }}
             >
-              Обсудить проект
-              <Icon name="ArrowRight" size={14} />
-            </a>
+              <div className="relative">
+                <div className="absolute -inset-4 bg-gradient-to-br from-violet-100 via-sky-50 to-emerald-50 rounded-2xl blur-2xl opacity-60" />
+                <img
+                  src="https://cdn.poehali.dev/projects/493ccf67-107e-4d5d-a3d4-d85c643cb77d/files/3e096512-aab7-43ec-a3bc-1df63fb2fb52.jpg"
+                  alt="Веб-портал автоматизации"
+                  className="relative w-full object-cover rounded-xl shadow-2xl shadow-violet-100"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
