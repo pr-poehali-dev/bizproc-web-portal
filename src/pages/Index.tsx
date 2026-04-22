@@ -170,48 +170,55 @@ export default function Index() {
           className="opacity-0 animate-fade-in mb-36"
           style={{ animationDelay: "1.0s" }}
         >
-          <div className="border border-neutral-200 p-10 md:p-14 relative overflow-hidden">
+          <div className="border border-neutral-200 relative overflow-hidden">
             {/* Цветной акцент-угол */}
-            <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-violet-500 via-sky-400 to-emerald-400" />
+            <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-violet-500 via-sky-400 to-emerald-400 z-10" />
 
-            <div className="flex items-start gap-4 mb-10 pl-4">
-              <div className="w-8 h-8 rounded-full bg-violet-100 flex items-center justify-center shrink-0 mt-1">
-                <Icon name="FileSpreadsheet" size={14} className="text-violet-600" />
-              </div>
-              <div>
-                <p className="text-xs tracking-widest uppercase text-violet-500 mb-2">Узнаёте себя?</p>
-                <h2 className="font-display italic text-3xl md:text-4xl font-light text-neutral-900 leading-tight">
-                  Работа в Excel<br />
-                  <span className="text-neutral-400">съедает ваше время</span>
-                </h2>
-              </div>
-            </div>
-
-            <div className="grid sm:grid-cols-2 gap-0 border-t border-neutral-200 pl-4">
-              {pains.map((pain, i) => (
-                <div
-                  key={i}
-                  className="border-b border-neutral-200 py-5 flex items-start gap-4 group"
-                  style={{
-                    paddingRight: (i + 1) % 2 !== 0 ? "2rem" : 0,
-                    paddingLeft: (i + 1) % 2 === 0 ? "2rem" : 0,
-                    borderBottom: i >= pains.length - 1 ? "none" : undefined,
-                    borderLeft: (i + 1) % 2 === 0 ? "1px solid #e5e7eb" : "none",
-                  }}
-                >
-                  <span className="text-violet-400 font-display text-lg shrink-0 mt-0.5">—</span>
-                  <p className="text-sm text-neutral-600 leading-relaxed">{pain}</p>
+            <div className="grid md:grid-cols-2">
+              <div className="p-10 md:p-14 pl-11 md:pl-15">
+                <div className="flex items-start gap-4 mb-10">
+                  <div className="w-8 h-8 rounded-full bg-violet-100 flex items-center justify-center shrink-0 mt-1">
+                    <Icon name="FileSpreadsheet" size={14} className="text-violet-600" />
+                  </div>
+                  <div>
+                    <p className="text-xs tracking-widest uppercase text-violet-500 mb-2">Узнаёте себя?</p>
+                    <h2 className="font-display italic text-3xl md:text-4xl font-light text-neutral-900 leading-tight">
+                      Работа в Excel<br />
+                      <span className="text-neutral-400">съедает ваше время</span>
+                    </h2>
+                  </div>
                 </div>
-              ))}
-            </div>
 
-            <div className="mt-10 pt-8 border-t border-neutral-200 pl-4">
-              <p className="text-neutral-900 font-semibold text-sm tracking-wide">
-                Мы решаем все эти проблемы — один раз и навсегда.
-              </p>
-              <p className="text-neutral-500 text-sm mt-1">
-                Процессы автоматизируются, данные перемещаются сами, ошибок не бывает.
-              </p>
+                <div className="flex flex-col gap-0 border-t border-neutral-200">
+                  {pains.map((pain, i) => (
+                    <div
+                      key={i}
+                      className="border-b border-neutral-200 py-4 flex items-start gap-4"
+                      style={{ borderBottom: i >= pains.length - 1 ? "none" : undefined }}
+                    >
+                      <span className="text-violet-400 font-display text-lg shrink-0 mt-0.5">—</span>
+                      <p className="text-sm text-neutral-600 leading-relaxed">{pain}</p>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-10 pt-8 border-t border-neutral-200">
+                  <p className="text-neutral-900 font-semibold text-sm tracking-wide">
+                    Мы решаем все эти проблемы — один раз и навсегда.
+                  </p>
+                  <p className="text-neutral-500 text-sm mt-1">
+                    Процессы автоматизируются, данные перемещаются сами, ошибок не бывает.
+                  </p>
+                </div>
+              </div>
+
+              <div className="hidden md:flex items-stretch border-l border-neutral-200">
+                <img
+                  src="https://cdn.poehali.dev/projects/493ccf67-107e-4d5d-a3d4-d85c643cb77d/files/d19a3c88-2b9d-4b73-a183-87afd5422738.jpg"
+                  alt="Хаос Excel-таблиц"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -332,7 +339,15 @@ export default function Index() {
           className="opacity-0 animate-fade-in"
           style={{ animationDelay: "1.3s" }}
         >
-          <div className="relative overflow-hidden border border-neutral-200 p-12 md:p-16 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+          <div className="relative overflow-hidden border border-neutral-200 grid md:grid-cols-2">
+            <div className="hidden md:block">
+              <img
+                src="https://cdn.poehali.dev/projects/493ccf67-107e-4d5d-a3d4-d85c643cb77d/files/08837a8d-5ce6-4bcd-af7e-58c2f5e2f37f.jpg"
+                alt="Команда с автоматизацией"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="relative p-12 md:p-16 flex flex-col justify-center gap-8">
             <div className="absolute inset-0 bg-gradient-to-br from-violet-50 via-white to-sky-50 pointer-events-none" />
             <div className="relative">
               <h2 className="font-display italic text-3xl md:text-4xl font-light text-neutral-900 mb-2">
@@ -357,6 +372,7 @@ export default function Index() {
                 <Icon name="Phone" size={14} />
                 +7 900 000-00-00
               </a>
+            </div>
             </div>
           </div>
         </section>
