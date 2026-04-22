@@ -92,8 +92,8 @@ export default function Index() {
             className="opacity-0 animate-fade-in font-display text-[clamp(3rem,8vw,7rem)] leading-none font-light text-neutral-900 mb-8"
             style={{ animationDelay: "0.5s" }}
           >
-            Бизнес растёт,<br />
-            <em className="not-italic text-neutral-400">рутина — нет</em>
+            Вы можете вести<br />
+            <em className="not-italic text-neutral-400">бизнес в разы эффективнее</em>
           </h1>
           <div
             className="opacity-0 animate-fade-in max-w-lg"
@@ -118,10 +118,63 @@ export default function Index() {
           </div>
         </section>
 
+        {/* Excel-боли */}
+        <section
+          className="opacity-0 animate-fade-in mb-36"
+          style={{ animationDelay: "1.0s" }}
+        >
+          <div className="border border-neutral-200 p-10 md:p-14">
+            <div className="flex items-start gap-4 mb-10">
+              <div className="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center shrink-0 mt-1">
+                <Icon name="FileSpreadsheet" size={14} className="text-neutral-500" />
+              </div>
+              <div>
+                <p className="text-xs tracking-widest uppercase text-neutral-400 mb-2">Узнаёте себя?</p>
+                <h2 className="font-display italic text-3xl md:text-4xl font-light text-neutral-900 leading-tight">
+                  Работа в Excel<br />
+                  <span className="text-neutral-400">съедает ваше время</span>
+                </h2>
+              </div>
+            </div>
+            <div className="grid sm:grid-cols-2 gap-0 border-t border-neutral-200">
+              {[
+                "Используете большое количество Excel-файлов в работе?",
+                "Монотонное копирование данных из файла в файл отнимает часы?",
+                "Сотрудники допускают ошибки и опечатки при переносе данных?",
+                "Формулы и связи в таблицах постоянно слетают?",
+                "Сборка отчёта из нескольких файлов превращается в настоящий ад?",
+                "Таблицы стали огромными и нечитабельными?",
+                "Собрать данные из разных источников в один файл — долго, трудно, а иногда невозможно?",
+              ].map((pain, i) => (
+                <div
+                  key={i}
+                  className="border-b border-r border-neutral-200 py-5 px-0 flex items-start gap-4 group"
+                  style={{
+                    borderRight: (i + 1) % 2 === 0 ? "none" : undefined,
+                    borderBottom: i >= 6 ? "none" : undefined,
+                    paddingLeft: (i + 1) % 2 === 0 ? "2rem" : 0,
+                  }}
+                >
+                  <span className="text-neutral-300 font-display text-lg shrink-0 mt-0.5">—</span>
+                  <p className="text-sm text-neutral-600 leading-relaxed">{pain}</p>
+                </div>
+              ))}
+            </div>
+            <div className="mt-10 pt-8 border-t border-neutral-200">
+              <p className="text-neutral-900 font-semibold text-sm tracking-wide">
+                Мы решаем все эти проблемы — один раз и навсегда.
+              </p>
+              <p className="text-neutral-500 text-sm mt-1">
+                Процессы автоматизируются, данные перемещаются сами, ошибок не бывает.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Что автоматизируем */}
         <div
           className="opacity-0 animate-fade-in flex items-center gap-6 mb-16"
-          style={{ animationDelay: "1.0s" }}
+          style={{ animationDelay: "1.05s" }}
         >
           <div className="h-px flex-1 bg-neutral-200" />
           <span className="text-xs tracking-widest uppercase text-neutral-400">
