@@ -156,7 +156,7 @@ export default function Index() {
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-br from-violet-100 via-sky-50 to-emerald-50 rounded-2xl blur-2xl opacity-60" />
                 <img
-                  src="https://cdn.poehali.dev/projects/493ccf67-107e-4d5d-a3d4-d85c643cb77d/files/5035c553-11b4-4cbc-acf2-10c6a500ecc7.jpg"
+                  src="https://cdn.poehali.dev/projects/493ccf67-107e-4d5d-a3d4-d85c643cb77d/files/fc5ee6e0-552a-4a13-8704-019f41279b2c.jpg"
                   alt="Веб-портал автоматизации"
                   className="relative w-full object-cover rounded-xl shadow-2xl shadow-violet-100"
                 />
