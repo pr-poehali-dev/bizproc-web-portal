@@ -88,20 +88,6 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-white font-sans text-neutral-900 overflow-x-hidden">
 
-      {/* Анимированный фон */}
-      <div className="fixed inset-0 pointer-events-none overflow-hidden z-0" aria-hidden="true">
-        <div className="bg-dot absolute w-96 h-96 rounded-full bg-violet-200/60 blur-3xl top-[5%] left-[5%]" />
-        <div className="bg-dot absolute w-[28rem] h-[28rem] rounded-full bg-sky-200/50 blur-3xl top-[25%] right-[3%]" />
-        <div className="bg-dot absolute w-80 h-80 rounded-full bg-emerald-200/50 blur-3xl top-[58%] left-[15%]" />
-        <div className="bg-dot absolute w-96 h-96 rounded-full bg-violet-200/55 blur-3xl bottom-[10%] right-[15%]" />
-        <div className="bg-dot absolute w-72 h-72 rounded-full bg-sky-200/45 blur-2xl top-[45%] left-[45%]" />
-        <div className="bg-dot absolute w-80 h-80 rounded-full bg-emerald-200/40 blur-3xl top-[2%] right-[30%]" />
-        <div className="bg-dot absolute w-64 h-64 rounded-full bg-violet-300/30 blur-2xl top-[75%] left-[55%]" />
-        <div className="bg-dot absolute w-56 h-56 rounded-full bg-sky-300/35 blur-2xl top-[15%] left-[40%]" />
-      </div>
-
-      <div className="relative z-10">
-
       <div className="h-[2px] bg-gradient-to-r from-violet-500 via-sky-500 to-emerald-500" />
 
       <header className="px-8 py-6 flex items-center justify-between max-w-5xl mx-auto">
@@ -408,7 +394,6 @@ export default function Index() {
       </footer>
 
       <div className="h-[2px] bg-gradient-to-r from-violet-500 via-sky-500 to-emerald-500" />
-      </div>
     </div>
   );
 }
