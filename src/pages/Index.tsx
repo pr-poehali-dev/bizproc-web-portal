@@ -88,6 +88,18 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-white font-sans text-neutral-900 overflow-x-hidden">
 
+      {/* Анимированный фон */}
+      <div className="fixed inset-0 pointer-events-none overflow-hidden z-0" aria-hidden="true">
+        <div className="bg-dot absolute w-64 h-64 rounded-full bg-violet-100/40 blur-3xl top-[8%] left-[10%]" />
+        <div className="bg-dot absolute w-80 h-80 rounded-full bg-sky-100/40 blur-3xl top-[30%] right-[8%]" />
+        <div className="bg-dot absolute w-56 h-56 rounded-full bg-emerald-100/30 blur-3xl top-[60%] left-[20%]" />
+        <div className="bg-dot absolute w-72 h-72 rounded-full bg-violet-50/50 blur-3xl bottom-[15%] right-[20%]" />
+        <div className="bg-dot absolute w-48 h-48 rounded-full bg-sky-100/30 blur-2xl top-[50%] left-[50%]" />
+        <div className="bg-dot absolute w-60 h-60 rounded-full bg-emerald-50/40 blur-3xl top-[5%] right-[35%]" />
+      </div>
+
+      <div className="relative z-10">
+
       <div className="h-[2px] bg-gradient-to-r from-violet-500 via-sky-500 to-emerald-500" />
 
       <header className="px-8 py-6 flex items-center justify-between max-w-5xl mx-auto">
@@ -394,6 +406,7 @@ export default function Index() {
       </footer>
 
       <div className="h-[2px] bg-gradient-to-r from-violet-500 via-sky-500 to-emerald-500" />
+      </div>
     </div>
   );
 }
